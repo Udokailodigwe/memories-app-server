@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import postMessageModel from "../models/postMessage.js";
 
 /*CRUD functions*/
@@ -21,4 +22,26 @@ export const createPosts = async (req, res) => {
     } catch (error) {
         res.status(409).send({ Message: error.message })
     }
+}
+
+export const updatePost = async (req, res) => {
+    const { id: _id } = req.params;
+    const post = req.body;
+
+    if (!mongoose.Types.ObjectId.isValid(_id))
+        return res.status(404).send('No post with that id');
+
+    const updatedPost = await postMessageModel.findByIdAndUpdate(_id, post, { new: true });
+    res.json(updatedPost);
+}
+
+export const deletePost = async (req, res) => {
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id))
+        return res.status(404).send('No post with that id');
+
+    await postMessageModel.findByIdAndRemove(id);
+
+    res.json({ message: 'Post deleted successfully' });
 }
