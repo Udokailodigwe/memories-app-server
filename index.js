@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 /*connect mongoose to database, for CRUD operations on documents within it*/
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
