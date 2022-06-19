@@ -27,7 +27,7 @@ app.use('/posts', postRoutes);
 
 /*endpoints*/
 app.use('/documentation', (req, res) => {
-    res.sendFile('public/documentation', { root: __dirname });
+    res.sendFile('public/documentation.html', { root: __dirname });
 });
 
 app.get('/', (req, res) => {
