@@ -24,6 +24,12 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.use('/posts', postRoutes);
+
+/*endpoints*/
+app.use('/documentation', (req, res) => {
+    res.sendFile('public/documentation.html', { root: __dirname });
+});
+
 app.get('/', (req, res) => {
     res.send('Welcome to Pet-Memories-Application');
 });
