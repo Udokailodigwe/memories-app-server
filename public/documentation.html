@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles.css">
+    <title>udo_flix API</title>
+</head>
+
+<body>
+    <h1> pet-memories-app-server API Documentation</h1>
+    <p class="app__description">
+        The documentation on the functionality and understanding of how this API works is detailed below.
+    </p>
+    <h3> <i>pet-memories-app-server REST API goal:</i> </h3>
+    <p>
+        The goal of this REST API is to provide pet lovers opportunity to upload, share and store their memories with
+        their pets. This app enables simple CRUD operations on an application, such create, update, delete, get and like
+        a post.
+
+    </p>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>HTTP Method</th>
+                <th>Request</th>
+                <th>URL</th>
+                <th>Request body data format</th>
+                <th>Response body data format</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GET</td>
+                <td>Get posts</td>
+                <td>'/'</td>
+                <td>None</td>
+                <td>Get data array of all posts in JSON format</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>Allow users to create posts</td>
+                <td>'/'</td>
+                <td>A JSON object holding data about the new post
+                    <br>
+                    Example: {
+                    Creator : 'Pedro',
+                    Title: "My cute pet"
+                    Message: "Me and cat Selina having fun"
+                    Tags: "pet,cat,pedro"
+                    }
+                </td>
+                <td>A JSON format of the post added information, included with a unique id.
+                    <br>
+                    Example: {
+                    id: 313abc8798298eetwewe222445,
+                    Creator : 'Pedro',
+                    Title: "My cute pet"
+                    Message: "Me and cat Selina having fun"
+                    Tags: "pet,cat,pedro
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td>PUT</td>
+                <td>Allow user to update their post</td>
+                <td>'/:id'</td>
+                <td>None</td>
+                <td>A JSON format data with the updated result</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>Allow users to remove a post from posts</td>
+                <td>'/:id'</td>
+                <td>None</td>
+                <td>Returns empty array</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
