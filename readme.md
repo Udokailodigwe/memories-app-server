@@ -5,7 +5,7 @@ Simple application for pet lovers to upload, share and store their memories with
 This is the serverside backend component of pet-memories-app-clients([React-Client Version](https://github.com/Udokailodigwe/pet-memories-app-client)). This app enables simple CRUD operations on an application, such create, update, delete, get and like a post.
 
 ### udo_flix-API Documentation
-[Here](https://pet-memory-project.herokuapp.com/documentation.html) you can view the API documentation
+[Here](https://pet-memory-project.herokuapp.com/documentation) you can view the API documentation
 
 
 ### API features
