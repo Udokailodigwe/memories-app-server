@@ -1,7 +1,7 @@
 # memories-app--server 
 Simple application for people to upload, share and store fun memories of themselves.
 
-### pet-memories-app REST API Goal: 
+### memories-app REST API Goal: 
 This is the serverside backend component of memories-app-clients([React-Client Version](https://github.com/Udokailodigwe/memories-app-client)). This app enables simple CRUD operations on an application, such create, update, delete, get and like a post.
 
 ### API features
