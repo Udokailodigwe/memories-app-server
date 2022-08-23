@@ -1,12 +1,8 @@
-# pet-memories-app--server 
-Simple application for pet lovers to upload, share and store their memories with their pets.
+# memories-app--server 
+Simple application for people to upload, share and store fun memories of themselves.
 
 ### pet-memories-app REST API Goal: 
-This is the serverside backend component of pet-memories-app-clients([React-Client Version](https://github.com/Udokailodigwe/pet-memories-app-client)). This app enables simple CRUD operations on an application, such create, update, delete, get and like a post.
-
-### udo_flix-API Documentation
-[Here](https://pet-memory-project.herokuapp.com/documentation.html) you can view the API documentation
-
+This is the serverside backend component of memories-app-clients([React-Client Version](https://github.com/Udokailodigwe/memories-app-client)). This app enables simple CRUD operations on an application, such create, update, delete, get and like a post.
 
 ### API features
 <ul>
@@ -25,4 +21,4 @@ This is the serverside backend component of pet-memories-app-clients([React-Clie
 ### Technologies 
 (MongoDB, Mongoose, Express, Nodemon and Node.js).
 
-**pet-memories-app-server  HOSTED ON HEROKU**
+**memories-app-server  HOSTED ON HEROKU**
